@@ -4,11 +4,12 @@ const routes = require("./routes");
 const server = http.createServer(routes);
 
 server.listen(3000);
-
 /**
- * if we run in terminal:  $ nodemon app.js (it looks globally)-> you might get error
- * but if added in script and  $npm start  it looks localy.
+ * To check Logical Error, use Debugger:
  *
- * if we want it locally we can run: $npm install -g nodemon.
- * So, it'd be added to a global package and you can run anywhere on the machine
+ * -Kill current process
+ * -in VSC, menu Run, Start Debugging, Select Node.js
+ *   (you will see the new toolbar(step in, out etc), the orange bar below and the new Debug console)
+ * - you can use also use left hand tool set ( watch, breakpoints)
+ * - you can use the DEBUG CONSOLE to command the variable, e.g. parsedBody.split('=')
  */
