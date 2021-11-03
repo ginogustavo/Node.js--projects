@@ -13,5 +13,7 @@ server.listen(3000);
             "console": "integratedTerminal"
  * 
  * You could add the starting point which should be: app.js
-
+ *
+ * You can Edit your variales while debuggin in the left hand menu
+ * 
  */
