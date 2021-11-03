@@ -5,11 +5,13 @@ const server = http.createServer(routes);
 
 server.listen(3000);
 /**
- * To check Logical Error, use Debugger:
+ * To Restart the Debugger automatically After editing the App
  *
- * -Kill current process
- * -in VSC, menu Run, Start Debugging, Select Node.js
- *   (you will see the new toolbar(step in, out etc), the orange bar below and the new Debug console)
- * - you can use also use left hand tool set ( watch, breakpoints)
- * - you can use the DEBUG CONSOLE to command the variable, e.g. parsedBody.split('=')
+ * In VSC, Menu Debug, Add Configuration, and you can add:
+ *          "restart": true,
+            "runtimeExecutable": "nodemon",
+            "console": "integratedTerminal"
+ * 
+ * You could add the starting point which should be: app.js
+
  */
