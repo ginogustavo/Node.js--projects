@@ -26,7 +26,7 @@ const server = http.createServer((req, res) => {
       console.log(parsedBody);
       const message = parsedBody.split("=")[1];
 
-      //As it is sync, this code will block the execution until
+      //As it's sync, this code will block the execution until
       //the file is created
       fs.writeFile("message.txt", message, (err) => {
         //recevies an error in case of any, but null if not

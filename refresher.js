@@ -80,13 +80,13 @@ let secondPersonObj = personObj;
 console.log(secondPersonObj);
 
 personObj.name = "Gustavo";
-//therefore if changed he original obj's values, the other variable(with the same pointer) will see that
+//therefore if changed the original obj's values, the other variable(with the same pointer) will see that
 console.log(secondPersonObj);
 
 //to create a new object based on another
 let thirdPersonObj = Object.assign({}, personObj);
 //1. first argument can be any object, no need to be an empty
-//2. this method assign is merging what ever the first argumetn objetc with the 2nd one.
+//2. this method assign is merging whatever the first argument object is with the 2nd one.
 
 //Known Issue: even if you clone the object, when changing the array,
 //still reference the original one, because Object.assign does not
@@ -151,7 +151,7 @@ const printName = ({ name }) => {
 
 printName(personObj);
 
-// No only function but for creating new varibles out of objects
+// No only function but for creating new variables out of objects
 //names of variables have to match
 const { name, age } = personObj; //  Object Destructuring, pulled out by name
 console.log(name, age);

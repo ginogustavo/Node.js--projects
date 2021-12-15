@@ -3,10 +3,10 @@ const http = require("http");
 const server = http.createServer((req, res) => {
   console.log("Server started.");
   console.log(req.url, req.method, req.headers);
-  // url is everything after the domain host name(http://localhost:80), in this case /
-  //res, to fill the data we want to return
+  // url is everything after the domain host name(http://localhost:80), in this case just /
+  //res, is used to fill the data we want to return
 
-  // this will attacha the header to our response
+  // this will attach a the header to our response
   res.setHeader("Content-Type", "text/html");
 
   // write data to the response

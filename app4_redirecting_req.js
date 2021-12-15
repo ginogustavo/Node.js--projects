@@ -16,10 +16,12 @@ const server = http.createServer((req, res) => {
     return res.end();
   }
   if (url === "/message" && method === "POST") {
-    //1. Redirect the user to /
+    fs.writeFileSync("message.txt", "Dummy"); //create text file
 
-    //2. create new file and story the text user entereed in it
-    fs.writeFileSync("message.txt", "Dummy");
+    //ToDo:
+    //1. create new file and store the text user entered in it
+    //2. Redirect the user to /
+
     //res.writeHead(302, {}); //metadata information,
     // status code 302 (re-direction), js object
     //or in 2 steps
@@ -27,11 +29,11 @@ const server = http.createServer((req, res) => {
     res.setHeader("Location", "/");
     return res.end();
   }
-  res.setHeader("Content-Type", "text/html");
-  res.write("<html>");
-  res.write("<head><title>My first page</title></head>");
-  res.write("<body><h1>Hello from Node.js server</h1></body>");
-  res.write("</html>");
-  res.end();
+  // res.setHeader("Content-Type", "text/html");
+  // res.write("<html>");
+  // res.write("<head><title>My first page</title></head>");
+  // res.write("<body><h1>Hello from Node.js server</h1></body>");
+  // res.write("</html>");
+  // res.end();
 });
 server.listen(3000);

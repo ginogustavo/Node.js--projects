@@ -2,10 +2,10 @@ const http = require("http");
 
 const routes = require("./routes"); // you can ommit .js or included
 /**
- * Node.js will look for the this file and check what it has for
+ * Node.js will look for this file and check what it has for
  * export.exports and see what is register in there and we assign
- * whatever is exported from that file in this  constant (routes)
- * which is a function.
+ * whatever is exported from that file in this constant (routes)
+ * which in this case is a function.
  */
 
 //const server = http.createServer(routes); // no excution just tell

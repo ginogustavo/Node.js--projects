@@ -63,6 +63,6 @@ const requestHandler = (req, res) => {
 // module.exports.handler = requestHandler;
 // module.exports.someText = "another hard coded text";
 
-//4th shortcuts by Node.js - ommit module.
+//4th shortcuts by Node.js - ommit module keyword
 exports.handler = requestHandler;
 exports.someText = "yet another hard coded text";

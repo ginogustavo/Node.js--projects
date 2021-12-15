@@ -5,7 +5,7 @@ require() is a global available function in node js
 - You could also import your own files
 i.e. writing the path with ./ (relative) or / (absolute) paths
 
--It automatically add .js at the end, but you can added(no needed)
+-It automatically add .js at the end, but you can add it (no needed)
 
 -If only name, it looks for a global module.
 */
@@ -36,7 +36,7 @@ server.listen(3000);
 /**
  * listen() will start a process where Node.js will exit this script and
  * instead keep this running to listen for incomming request.
- * It takes optinal arguments: PORT (in prod you won't fill this out and
+ * It takes optional arguments: PORT (in prod you won't fill this out and
  * take the default port 80.), HOSTNAME (name of machine this is running)
  */
 

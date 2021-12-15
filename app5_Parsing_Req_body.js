@@ -30,7 +30,7 @@ const server = http.createServer((req, res) => {
     // end listener will be fired once it's done parsing the incoming request data
     req.on("end", () => {
       //we can rely on all the chunks being read in (stored in body)
-      //we now ned to buffer them
+      //we now need to buffer them
       const parsedBody = Buffer.concat(body).toString(); //is available globally by Node.js
       //This will create a new buffer and add all the chunks from body to it.
       //Then from the buffer, I can convert it to String (in this case I know beforehand)

@@ -3,7 +3,7 @@ const fetchData = () => {
     // Promise take a callback which takes 2 argument that
     // are functions. 1st completes promise successfully
     //2nd one rejecte it.(throw error)
-    // Then move the asyn code and move inside
+    // Then move the async code and move inside
 
     setTimeout(() => {
       resolve("fetch Data done!");
@@ -24,7 +24,7 @@ setTimeout(() => {
       // promise gets resolved()
       console.log(text);
       return fetchData(); // In the first I return another promise
-      //or even if I dont return a promise, just return, convert it in a promise
+      //or even if I don't return a promise, just return, convert it in a promise
     })
     .then((text2) => {
       console.log(text2);
