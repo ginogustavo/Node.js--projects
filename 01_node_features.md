@@ -10,7 +10,7 @@
 Syncrhonous lines run one after another
 asynchronous, non blocking model -> Node can continue to do other things, like run everthing down below while it's waiting for those 2 seconds to pass
 
-[image 1]
+![image](https://user-images.githubusercontent.com/5447557/151668201-91fb3fd6-eb6e-473f-beca-4f53800735a5.png)
 
 ## Asynchronous example
 
