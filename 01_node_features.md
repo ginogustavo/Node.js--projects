@@ -14,7 +14,7 @@ asynchronous, non blocking model -> Node can continue to do other things, like r
 
 ## Asynchronous example
 
-[image 2]
+<iframe src="https://giphy.com/embed/SxPtoVOjNDcJhjixBG" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/SxPtoVOjNDcJhjixBG">via GIPHY</a></p>
 
 setTimeout() is not a javascript function, Node.js creates an implementation of the setTimeout using C++ and provides it.
 
