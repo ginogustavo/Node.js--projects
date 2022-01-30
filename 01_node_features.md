@@ -15,9 +15,8 @@ Synchronous lines run one after another
 
 Asynchronous, non blocking model -> Node can continue to do other things, while it's waiting for those 2 seconds to pass.
 
-<iframe src="https://giphy.com/embed/UmVT4NU6IDTLjum9Ni" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/UmVT4NU6IDTLjum9Ni">via GIPHY</a></p>
+[![](https://media.giphy.com/media/SxPtoVOjNDcJhjixBG/giphy.gif)](binary_files/Asynchronous.mp4)
 
-![](https://media.giphy.com/media/SxPtoVOjNDcJhjixBG/giphy.gif)
 
 setTimeout() is not a javascript function, Node.js creates an implementation of the setTimeout using C++ and provides it.
 
