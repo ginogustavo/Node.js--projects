@@ -14,6 +14,7 @@ asynchronous, non blocking model -> Node can continue to do other things, like r
 
 ## Asynchronous example
 
+<iframe src="https://giphy.com/embed/UmVT4NU6IDTLjum9Ni" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/UmVT4NU6IDTLjum9Ni">via GIPHY</a></p>
 
 ![](https://media.giphy.com/media/SxPtoVOjNDcJhjixBG/giphy.gif)
 
