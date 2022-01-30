@@ -5,14 +5,15 @@
 - single-thread
 - event-driven
 
-## Synchronous example
+# Synchronous
 
-Syncrhonous lines run one after another
-asynchronous, non blocking model -> Node can continue to do other things, like run everthing down below while it's waiting for those 2 seconds to pass
+Synchronous lines run one after another
 
 ![image](https://user-images.githubusercontent.com/5447557/151668201-91fb3fd6-eb6e-473f-beca-4f53800735a5.png)
 
-## Asynchronous example
+# Asynchronous
+
+Asynchronous, non blocking model -> Node can continue to do other things, while it's waiting for those 2 seconds to pass.
 
 [image 2]
 
@@ -45,13 +46,18 @@ When a given event is done, e.g. the milliseconds in the timer is complete, the 
 
 In the Queue, the ones that are ready to get executed, it needs to be added to the Call Stack, where functions go to run.
 
-### EVENT LOOP (EL):
+# Event Loop
 
-EL looks at the "Call Stack" and also the "Callback Queue"
+Event Loop looks at the **"Call Stack"** and also the **"Callback Queue"**
 
 If the Call Stack is empty, it's going to run items from the Callback Queue
 
 So, Call Stack continues, once main() gets completed and removed from the Stack,
 
-it's empty.
-In synchronous program code this is when app finishes. However in Asysnchronous pro
+In regular **_synchronous_** scripts this is when program code actually finishes.
+
+However in **_asysnchronous_** programs,
+
+1. Event Loop sees the **Call Stack** is empty.
+2. Check the **_Callback Queue_**
+3. If anything pending, move it to the **_Call Stack_** (so it runs)
